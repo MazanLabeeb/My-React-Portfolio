@@ -1,6 +1,7 @@
 import CTA from "./CTA.component";
 import "./header.styles.scss";
 import ME from "../../assets/me.png";
+import HeaderSocials from "./header-socials.component";
 
 const Header = () => {
     return (
@@ -16,7 +17,7 @@ const Header = () => {
                 </div>
                 
                 <a href="#contact" className="scroll-down">Scroll Dow</a>
-                
+                <HeaderSocials />
             </div>
         </header>
     )
