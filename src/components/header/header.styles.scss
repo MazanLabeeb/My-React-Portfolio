@@ -1,17 +1,39 @@
 @import "../../globals";
 
-header{
+header {
     height: 100vh;
     padding-top: 7rem;
     overflow: hidden;
 
-    .header-container{
+    .header-container {
         text-align: center;
         height: 100%;
         position: relative;
+
+        .me {
+            background-color: $primary;
+            background: linear-gradient($primary, transparent);
+            width: 22rem;
+            height: 30rem;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 4rem;
+            border-radius: 12rem 12rem 0 0;
+            overflow: hidden;
+            padding: 5rem 1.5rem 1.5rem 1.5rem;
+
+        }
+
+        &:first-child,
+        h1 {
+            color: white;
+        }
     }
 
-    .cta{
+
+
+    .cta {
         margin-top: 2.5rem;
         display: flex;
         flex-direction: row;
@@ -19,7 +41,16 @@ header{
         justify-content: center;
     }
 
-    .header-socials{
+    .scroll-down {
+        position: absolute;
+        right: -2.3rem;
+        bottom: 5rem;
+        font-weight: 300;
+        font-size: 0.9rem;
+        transform: rotate(90deg);
+    }
+
+    .header-socials {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -28,11 +59,32 @@ header{
         left: 0;
         bottom: 3rem;
 
-        &::after{
+        &::after {
             content: "";
             width: 1px;
             height: 2rem;
             background-color: $primary;
         }
+    }
+}
+
+// media query - medium devices
+
+@media screen and (max-width: 1024px) {
+    header{
+        height: 68vh;
+    }
+    
+}
+
+
+// media query - small devices
+
+@media screen and (max-width: 600px) {
+    header{  
+        height: 100vh;
+    }
+    .header-socials, .scroll-down{
+        display: none !important;
     }
 }
