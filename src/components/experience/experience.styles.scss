@@ -1,0 +1,72 @@
+@import "../../globals";
+
+.experience-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    &>div{
+        background: $bg-variant;
+        padding: 2.4rem 5rem;
+        border-radius: 2rem;
+        border: 1px solid transparent;
+        transition: $transition;
+
+        &:hover{
+            background: transparent;
+            border-color: $primary-variant;
+            cursor: default;
+        }
+
+        &>h3{
+            color: $primary;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+    }
+
+    .experience-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2rem;
+    }
+
+    .experience-details{
+        display: flex;
+        gap: 1rem;
+        place-items: center;
+        
+        .experience-details-icon{
+            color: $primary;
+        }
+    }
+}
+
+// media query - medium devices
+@media screen and (max-width: 1024px){
+    .experience-container{
+        grid-template-columns: 1fr;
+    }
+
+    .experience-container{
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+    .experience-content{
+        padding: 1rem;
+    }
+  }
+  
+  // media query - small devices
+  @media screen and (max-width: 600px){
+    .experience-container{
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .experience-container>div{
+        padding: 2rem 1rem;
+    }
+  }

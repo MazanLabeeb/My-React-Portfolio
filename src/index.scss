@@ -22,7 +22,7 @@ html{
 
 body{
   background-color: $bg;
-  color: $light;
+  color: $white;
   font-family: 'Lato', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-image: url("./assets/bg-texture.png");
 }
@@ -96,7 +96,6 @@ img{
 
 
 // media query - medium devices
-
 @media screen and (max-width: 1024px){
   .container{
     width: $container-width-md;
@@ -106,9 +105,7 @@ img{
   }
 }
 
-
 // media query - small devices
-
 @media screen and (max-width: 600px){
   .container{
     width: $container-width-sm;
