@@ -1,0 +1,76 @@
+@import "../../globals";
+
+.contact-container{
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    
+    .contact-options{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        .contact-option{
+            background: $bg-variant;
+            padding: 1.2rem;
+            border-radius: 1.2rem;
+            text-align: center;
+            border: 1px solid transparent;
+            transition: $transition;
+
+            &:hover{
+                background: transparent;
+                border-color: $primary-variant;
+            }
+
+            a{
+                margin-top: 0.7rem;
+                display: inline-block;
+                font-size: 0.8rem;
+            }
+
+            .contact-icon{
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        input, textarea{
+            width: 100%;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            background: transparent;
+            border: 2px solid $primary-variant;
+            resize: none;
+            color: $white;
+        }
+    }
+
+}
+
+
+
+// media query - medium devices
+@media screen and (max-width: 1024px) {
+    .contact-container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }    
+}
+
+
+// media query - small devices
+@media screen and (max-width: 600px) {
+    .contact-container{
+        width: $container-width-sm;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }    
+}

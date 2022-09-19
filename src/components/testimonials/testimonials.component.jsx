@@ -4,7 +4,7 @@ import AVATAR2 from "../../assets/avatar2.jpg";
 import AVATAR3 from "../../assets/avatar3.jpg";
 import AVATAR4 from "../../assets/avatar4.jpg";
 
-import {  Pagination } from 'swiper';
+import { Pagination } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -34,6 +34,7 @@ const data = [
         name: "Adnan Akram",
         review: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo dolor quas eaque, accusantium suscipit veritatis debitis corporis natus consequatur sapiente qui, sequi ipsa odio ab praesentium officia provident tenetur fugit."
     },
+    
 ];
 
 const Testimonials = () => {
@@ -42,7 +43,15 @@ const Testimonials = () => {
             <h5>Review from clients</h5>
             <h2>Testimonials</h2>
 
-            <Swiper className="container testimonials-container">
+            <Swiper className="container testimonials-container"
+                // install Swiper modules
+                modules={[Pagination]}
+                spaceBetween={40}
+                slidesPerView={1}
+                navigation
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}
+            >
                 {
                     data.map(({ avatar, name, review }, index) => {
                         return (
