@@ -1,0 +1,75 @@
+@import "../../globals";
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+    .service{
+        background: $bg-variant;
+        border-radius: 0 0 2rem 2rem;
+        border: 1px solid $primary;
+        height: fit-content;
+        transition: $transition;
+
+        &:hover{
+            background-color: transparent;
+            border-color: $primary-variant;
+            cursor: default;
+        }
+
+        .service-head{
+            background: $primary;
+            padding: 2rem;
+            border-radius: 0 0 2rem 2rem;
+            box-shadow: 0 2rem 1rem rgba(0,0,0,0.1);
+
+            h3{
+                color: $bg;
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+
+        .service-list{
+            padding: 2rem;
+
+            li{
+                display: flex;
+                gap: 1rem;
+                margin-bottom: 0.8rem;
+                align-items: center;
+
+                p{
+                    font-size: 0.9rem;
+                }
+            }
+
+            .service-list-icon{
+                color: $primary;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
+// media query - medium devices
+@media screen and (max-width: 1024px) {
+    .services-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .services-container .service{
+        height: auto;
+    }
+}
+
+
+// media query - small devices
+@media screen and (max-width: 600px) {
+    .service-container{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
