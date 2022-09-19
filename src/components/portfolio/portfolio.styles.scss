@@ -1,0 +1,75 @@
+@import "../../globals";
+
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+
+    .portfolio-item{
+        background: $bg-variant;
+        padding: 1.2rem;
+        border-radius: 2rem;
+        border: 1px solid transparent;
+        transition: $transition;
+        &:hover{
+            border-color: $primary-variant;
+            background: transparent;
+        }
+
+        .portfolio-item-image{
+            border-radius: 1.5rem;
+            overflow: hidden;
+        }
+
+        h3{
+            margin: 1.2rem 0 2rem;
+        }
+
+        .portfolio-item-cta{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+    }
+
+
+}
+
+
+
+// media query - medium devices
+@media screen and (max-width: 1024px) {
+    .about-container{
+        grid-template-columns: 1fr;
+        gap:0;
+    }
+
+    .about-container .about-me{
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .about-container .about-content p{
+        margin: 1rem 0 1.5rem;
+    }
+    
+}
+
+// media query - medium devices
+@media screen and (max-width: 1024px) {
+    .portfolio-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+
+// media query - small devices
+@media screen and (max-width: 600px) {
+    .portfolio-container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
