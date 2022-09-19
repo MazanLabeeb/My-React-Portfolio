@@ -1,0 +1,70 @@
+@import "../../globals";
+
+footer{
+    background: $primary;
+    padding: 3rem 0;
+    text-align: center;
+    font-size:0.9rem;
+    margin-top: 7rem;
+
+    a{
+        color: $bg;
+    }
+
+    .footer-logo{
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        display: inline-block;
+    }
+
+    .permalinks{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin: 0 auto 3rem;
+    }
+
+    .footer-socials{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 4rem;
+
+        a{
+            background-color: $bg;
+            color: $white;
+            padding: 0.8rem;
+            border-radius: 0.7rem;
+            display: flex;
+            border: 1px solid transparent;
+
+            &:hover{
+                background: transparent;
+                color: $bg;
+                border-color: $bg;
+            }
+        }
+    }
+
+    .footer-copyright{
+        margin-bottom: 4rem;
+        color: $bg;
+        
+    }
+    
+}
+
+// media query - small devices
+@media screen and (max-width: 600px) {
+    .permalinks{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer-socials{
+        margin-bottom: 2.6rem;
+        
+    }
+}
