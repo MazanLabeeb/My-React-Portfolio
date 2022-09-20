@@ -10,29 +10,29 @@ const Services = () => {
             <div className="container services-container">
             <article className="service">
                     <div className="service-head">
-                        <h3>UI/UX Design</h3>
+                        <h3>Frontend Design</h3>
                     </div>
 
                     <ul className="service-list">
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>Responsive Web Design using media queries.</p>
                         </li>
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>Custom and unique website design according to Modren Trends.</p>
                         </li>
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>Beautiful sliders and scrolling animations.</p>
                         </li>
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>Convert Existing Site to Modern Design.</p>
                         </li>
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>Single page website (SPA) using React.</p>
                         </li>
                     </ul>
                 </article>
@@ -45,27 +45,27 @@ const Services = () => {
                     <ul className="service-list">
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>Backend API development.</p>
                         </li>
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>Clean and structured code to scale up for later.</p>
                         </li>
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>Social media Integration, Contact Forms, Google Maps, Newsletter</p>
                         </li>
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>3rd party API integration.</p>
                         </li>
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>Secure Admin and User panel creation with desired functionalities.</p>
                         </li>
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>A Distinctive and Professional-Appearing Design</p>
                         </li>
                     </ul>
                 </article>
@@ -78,23 +78,23 @@ const Services = () => {
                     <ul className="service-list">
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>Scraping script with GUI or non- GUI.</p>
                         </li>
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>Deployment of the script in cloud platform.</p>
                         </li>
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>Integrate the scraper with your database.</p>
                         </li>
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>Automate form submission and/or Workflow.</p>
                         </li>
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>Get your data in any format including CSV, JSON, Excel, and any Database.</p>
                         </li>
                     </ul>
                 </article>

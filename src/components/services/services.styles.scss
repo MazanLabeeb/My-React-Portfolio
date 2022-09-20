@@ -35,8 +35,9 @@
             padding: 2rem;
 
             li{
-                display: flex;
-                gap: 1rem;
+
+                display: grid;
+                grid-template-columns: 15% 85%;
                 margin-bottom: 0.8rem;
                 align-items: center;
 
@@ -47,7 +48,7 @@
 
             .service-list-icon{
                 color: $primary;
-                font-size: 2rem;
+                font-size: 1.2rem;
             }
         }
     }

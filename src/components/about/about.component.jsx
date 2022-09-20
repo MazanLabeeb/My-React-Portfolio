@@ -1,5 +1,5 @@
 import "./about.styles.scss";
-import ABOUT_ME_IMG from "../../assets/me-about.jpg";
+import ABOUT_ME_IMG from "../../assets/1by1dp.png";
 import {FaAward } from "react-icons/fa";
 import {FiUsers } from "react-icons/fi";
 import {AiOutlineFundProjectionScreen } from "react-icons/ai";
@@ -37,7 +37,7 @@ const About = () => {
                         </article>
                     </div>
 
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus excepturi inventore modi a cupiditate, animi quidem totam quis repellat corrupti repudiandae ipsum voluptatibus nobis ut similique consequatur beatae! Reprehenderit, beatae?</p>
+                    <p>I have worked on various web technologies both frontend and backend. I have always been passionate about coding. I love to develope clean, efficient and scalable products.  </p>
                     <a href="#contact" className="btn btn-primary">Let's Talk</a>
                 </div>
             </div>

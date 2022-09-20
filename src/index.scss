@@ -27,6 +27,18 @@ body{
   background-image: url("./assets/bg-texture.png");
 }
 
+img{
+  user-select: none;
+}
+
+.text-gradient{
+  background: -webkit-linear-gradient(right, red, blue);
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .container {
   width : $container-width-lg;
   margin: 0 auto;

@@ -1,6 +1,6 @@
 import CTA from "./CTA.component";
 import "./header.styles.scss";
-import ME from "../../assets/me.png";
+import ME from "../../assets/dp.png";
 import HeaderSocials from "./header-socials.component";
 
 const Header = () => {
@@ -8,7 +8,7 @@ const Header = () => {
         <header>
             <div className="container header-container">
                 <h5>Hello I'm</h5>
-                <h1>Mazan Labeeb</h1>
+                <h1 className="text-gradient">Mazan Labeeb</h1>
                 <h5 className="text-light">Full Stack Developer</h5>
                 <CTA />
                 <HeaderSocials />

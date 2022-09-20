@@ -1,5 +1,11 @@
 @import "../../globals";
 
+
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: $primary;
+}
+
 .testimonials-container{
     width: 40%;
     padding-bottom: 3rem !important;
