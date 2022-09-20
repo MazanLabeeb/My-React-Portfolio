@@ -50,6 +50,11 @@
             border: 2px solid $primary-variant;
             resize: none;
             color: $white;
+            &:focus,&:hover{
+                outline: none;
+                border: 2px solid $primary;
+
+            }
         }
     }
 

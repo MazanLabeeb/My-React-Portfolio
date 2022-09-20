@@ -2,9 +2,11 @@ import "./testimonials.styles.scss";
 import AVATAR1 from "../../assets/avatar1.jpg";
 import AVATAR2 from "../../assets/avatar2.jpg";
 import AVATAR3 from "../../assets/avatar3.jpg";
-import AVATAR4 from "../../assets/avatar4.jpg";
 
 import { Pagination } from 'swiper';
+import "swiper/css/autoplay";
+
+import SwiperCore, { Autoplay } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -12,29 +14,25 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
+SwiperCore.use([Autoplay]);
 
 const data = [
     {
         avatar: AVATAR1,
-        name: "Asma Iftikhar",
-        review: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo dolor quas eaque, accusantium suscipit veritatis debitis corporis natus consequatur sapiente qui, sequi ipsa odio ab praesentium officia provident tenetur fugit."
-    },
-    {
-        avatar: AVATAR2,
-        name: "Nouman Ayaz",
-        review: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo dolor quas eaque, accusantium suscipit veritatis debitis corporis natus consequatur sapiente qui, sequi ipsa odio ab praesentium officia provident tenetur fugit."
+        name: "ramizberisha",
+        review: "Very prompt replies and constantly updated me throughout the process. Was clear on what he could do and couldn't do."
     },
     {
         avatar: AVATAR3,
-        name: "Lahrasab",
-        review: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo dolor quas eaque, accusantium suscipit veritatis debitis corporis natus consequatur sapiente qui, sequi ipsa odio ab praesentium officia provident tenetur fugit."
+        name: "Kuljit Kaur",
+        review: "Everything looks perfect so far, thank you very much !"
     },
+
     {
-        avatar: AVATAR4,
-        name: "Adnan Akram",
-        review: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo dolor quas eaque, accusantium suscipit veritatis debitis corporis natus consequatur sapiente qui, sequi ipsa odio ab praesentium officia provident tenetur fugit."
-    },
-    
+        avatar: AVATAR2,
+        name: "trebuuu",
+        review: "Great partner for any software project! Mazen has the skills and temperament you wish for in a developer. thanks again!"
+    }
 ];
 
 const Testimonials = () => {
@@ -49,6 +47,7 @@ const Testimonials = () => {
                 spaceBetween={40}
                 slidesPerView={1}
                 navigation
+                autoplay = {{delay:4000}}
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
             >
