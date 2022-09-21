@@ -42,7 +42,7 @@ const Contact = () => {
                         <a href="https://api.whatsapp.com/send?phone=923061695230" target="_blank">Send a Message</a>
                     </article>
                 </div>
-                <form action="" autoComplete="off">
+                <form action="https://formsubmit.co/1a6397aef63bcdc9afe758f5d96e1b6a" method="POST" autoComplete="off">
                     <input type="text" name="name" onFocus={hideNavBar} onBlur={showNavBar} id="name" placeholder="Your Full Name" required />
                     <input type="email" name="email" onFocus={hideNavBar} onBlur={showNavBar} id="email" placeholder="Your Email" required />
                     <textarea placeholder="Leave a message..." onFocus={hideNavBar} onBlur={showNavBar} name="message" id="message" rows="7" required></textarea>

@@ -28,7 +28,7 @@ const data = [
         title: "Blog made using Expressjs, Mongodb and Bootstrap.",
         github: "https://github.com/MazanLabeeb/Express-Blog",
         demo: "https://mazansblog.herokuapp.com/blog?category=20"
-    }
+    },
 ];
 
 
@@ -61,3 +61,28 @@ const Portfolio = () => {
 }
 
 export default Portfolio;
+
+
+
+
+// {
+//     id: 4,
+//     image: PORTFOLIO4,
+//     title: 'Charts templates & infogaphics in Figma',
+//     github: "https://www.github.com/mazanlabeeb",
+//     demo: "https://mazansblog.herokuapp.com"
+// },
+// {
+//     id: 5,
+//     image: PORTFOLIO5,
+//     title: 'Crypto Currency Dashboard & Financial Visualization',
+//     github: "https://www.github.com/mazanlabeeb",
+//     demo: "https://mazansblog.herokuapp.com"
+// },
+// {
+//     id: 6,
+//     image: PORTFOLIO6,
+//     title: 'Charts templates & infogaphics in Figma',
+//     github: "https://www.github.com/mazanlabeeb",
+//     demo: "https://mazansblog.herokuapp.com"
+// }
