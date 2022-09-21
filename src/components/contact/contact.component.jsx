@@ -1,17 +1,16 @@
 import "./contact.styles.scss";
-import {MdOutlineEmail} from "react-icons/md";
-import {RiMessengerLine} from "react-icons/ri";
-import {BsWhatsapp} from "react-icons/bs";
+import { MdOutlineEmail } from "react-icons/md";
+import { RiMessengerLine } from "react-icons/ri";
+import { BsWhatsapp } from "react-icons/bs";
 
 
 const Contact = () => {
-    const floatingNav = document.getElementById("floatingNav");
 
     const hideNavBar = () => {
-        floatingNav.style.bottom = "-5rem";
+        document.getElementById("floatingNav").style.bottom = "-5rem";
     }
     const showNavBar = () => {
-        floatingNav.style.bottom = "2rem";
+        document.getElementById("floatingNav").style.bottom = "2rem";
     }
     return (
         <section id="contact">
