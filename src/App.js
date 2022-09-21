@@ -1,27 +1,17 @@
-import About from "./components/about/about.component";
-import Contact from "./components/contact/contact.component";
-import Experience from "./components/experience/experience.component";
-import Footer from "./components/footer/footer.component";
-import Header from "./components/header/header.component";
-import Nav from "./components/nav/nav.component";
-import Portfolio from "./components/portfolio/portfolio.component";
-import Services from "./components/services/services.component";
-import Testimonials from "./components/testimonials/testimonials.component";
+import { Route, Routes } from "react-router-dom";
+import Index from "./pages/index/index.page";
+import PageNotFound from "./pages/PageNotFound/PageNotFound.page";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Services />
-      <Portfolio />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="*" element={<PageNotFound />} />
+      
+    </Routes>
   );
 }
 
 export default App;
+
+
