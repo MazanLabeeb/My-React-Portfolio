@@ -1,5 +1,6 @@
 import "./services.styles.scss";
 import {AiOutlineCheck} from 'react-icons/ai';
+import {BiDotsHorizontal} from 'react-icons/bi';
 
 const Services = () => {
     return (
@@ -66,6 +67,12 @@ const Services = () => {
                         <li>
                             <AiOutlineCheck className="service-list-icon" />
                             <p>A Distinctive and Professional-Appearing Design</p>
+                        </li>
+                        
+
+                        <li>
+                            <BiDotsHorizontal className="service-list-icon" />
+                            <p>and much more</p>
                         </li>
                     </ul>
                 </article>
