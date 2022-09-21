@@ -1,17 +1,17 @@
 @import "../../globals";
 
-.contact-container{
+.contact-container {
     width: 58%;
     display: grid;
     grid-template-columns: 30% 58%;
     gap: 12%;
-    
-    .contact-options{
+
+    .contact-options {
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
 
-        .contact-option{
+        .contact-option {
             background: $bg-variant;
             padding: 1.2rem;
             border-radius: 1.2rem;
@@ -19,38 +19,43 @@
             border: 1px solid transparent;
             transition: $transition;
 
-            &:hover{
+            &:hover {
                 background: transparent;
                 border-color: $primary-variant;
             }
 
-            a{
+            a {
                 margin-top: 0.7rem;
                 display: inline-block;
                 font-size: 0.8rem;
             }
 
-            .contact-icon{
+            .contact-icon {
                 font-size: 1.5rem;
                 margin-bottom: 0.5rem;
             }
         }
     }
 
-    form{
+    form {
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
 
-        input, textarea{
+        input,
+        textarea {
+            font-weight: 400;
             width: 100%;
+            font-family: 'Lato', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             padding: 1.5rem;
             border-radius: 0.5rem;
             background: transparent;
             border: 2px solid $primary-variant;
             resize: none;
             color: $white;
-            &:focus,&:hover{
+
+            &:focus,
+            &:hover {
                 outline: none;
                 border: 2px solid $primary;
 
@@ -64,18 +69,18 @@
 
 // media query - medium devices
 @media screen and (max-width: 1024px) {
-    .contact-container{
+    .contact-container {
         grid-template-columns: 1fr;
         gap: 2rem;
-    }    
+    }
 }
 
 
 // media query - small devices
 @media screen and (max-width: 600px) {
-    .contact-container{
+    .contact-container {
         width: $container-width-sm;
         grid-template-columns: 1fr;
         gap: 1rem;
-    }    
+    }
 }
