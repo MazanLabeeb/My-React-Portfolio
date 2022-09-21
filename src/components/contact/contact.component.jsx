@@ -5,6 +5,14 @@ import {BsWhatsapp} from "react-icons/bs";
 
 
 const Contact = () => {
+    const floatingNav = document.getElementById("floatingNav");
+
+    const hideNavBar = () => {
+        floatingNav.style.bottom = "-5rem";
+    }
+    const showNavBar = () => {
+        floatingNav.style.bottom = "2rem";
+    }
     return (
         <section id="contact">
             <h5>Get In Touch</h5>
@@ -36,9 +44,9 @@ const Contact = () => {
                     </article>
                 </div>
                 <form action="" autoComplete="off">
-                    <input type="text" name="name" id="name" placeholder="Your Full Name" required />
-                    <input type="email" name="email" id="email" placeholder="Your Email" required />
-                    <textarea name="message" id="message" rows="7" required></textarea>
+                    <input type="text" name="name" onFocus={hideNavBar} onBlur={showNavBar} id="name" placeholder="Your Full Name" required />
+                    <input type="email" name="email" onFocus={hideNavBar} onBlur={showNavBar} id="email" placeholder="Your Email" required />
+                    <textarea placeholder="Leave a message..." onFocus={hideNavBar} onBlur={showNavBar} name="message" id="message" rows="7" required></textarea>
                     <button type="submit" className="btn btn-primary">Send a Message</button>
                 </form>
             </div>
