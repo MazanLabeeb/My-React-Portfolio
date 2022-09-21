@@ -17,14 +17,14 @@ const Footer = () => {
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <div className="footer-socials">
+            <div className="footer-socials ">
                 <a href="https://facebook.com/mazanlabeeb"><FaFacebookF /></a>
                 <a href="https://instagram.com/mazanlabeeb"><FiInstagram /></a>
                 <a href="https://twitter.com/mazanlabeeb"><IoLogoTwitter /></a>
             </div>
 
             <div className="footer-copyright">
-                <small>&copy; MazanLabeeb.tech All rights reserved.</small>
+                <small className="text-gradient">&copy; MazanLabeeb.tech All rights reserved.</small>
             </div>
         </footer>
     )
