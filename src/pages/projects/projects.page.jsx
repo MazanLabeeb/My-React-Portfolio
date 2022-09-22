@@ -50,7 +50,7 @@ const Projects = () => {
                                             Description: {(description)?description:<i>Not Available</i>}
                                         </div>
                                         <div className="cta">
-                                            <a href={homepage} className="btn" target="blank">Demo</a>
+                                            <a href={homepage} className={homepage?"btn":"btn btn-disabled"} target="blank">Demo</a>
                                             <a href={html_url} className="btn btn-primary" target="blank">Visit Repo</a>
 
 

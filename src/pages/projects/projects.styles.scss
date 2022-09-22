@@ -30,6 +30,9 @@
             display: flex;
             gap: 0.5rem;
             flex-direction: column;
+            h2{
+                color: $primary;
+            }
 
             .posted{
                 color: $light;

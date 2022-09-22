@@ -133,6 +133,12 @@ a{
   background-color: $primary;
   color: $bg;
 }
+.btn-disabled{
+  background-color: $primary-variant;
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+}
 
 img{
   display: block;
@@ -167,3 +173,4 @@ img{
   align-items: center;
   justify-content: center;
 }
+
