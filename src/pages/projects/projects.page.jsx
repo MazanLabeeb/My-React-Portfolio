@@ -42,7 +42,7 @@ const Projects = () => {
                     <section className="projects">
                         <h1 className="icon-btn text-gradient"><BsGithub />  &nbsp; Github Projects</h1>
                         <div className="cards">
-                            {getRepos.map(({ name, description, html_url, homepage, created_at , id }) => {
+                            {getRepos.map(({ name, description, html_url, homepage, created_at, id }) => {
                                 return (
                                     <div key={id} className="card">
                                         <div>
@@ -51,14 +51,12 @@ const Projects = () => {
                                         <div>
                                             Description: {(description) ? description : <i>Not Available</i>}
                                         </div>
-                                        <div className="cta">
-                                            <a href={homepage} className={homepage ? "btn" : "btn btn-disabled"} target="blank">Demo</a>
-                                            <a href={html_url} className="btn btn-primary" target="blank">Visit Repo</a>
-
-
-                                        </div>
                                         <div className="posted">
-                                            Posted: {moment(created_at).fromNow()}
+                                            <div className="cta">
+                                                <a href={homepage} className={homepage ? "btn" : "btn btn-disabled"} target="blank">Demo</a>
+                                                <a href={html_url} className="btn btn-primary" target="blank">Visit Repo</a>
+                                            </div>
+                                            <span>Posted: {moment(created_at).fromNow()}</span>
                                         </div>
                                     </div>
                                 )
