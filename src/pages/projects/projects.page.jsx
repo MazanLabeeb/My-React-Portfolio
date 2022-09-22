@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { BsGithub } from "react-icons/bs";
 import moment from "moment";
 import Footer from "../../components/footer/footer.component";
-import Nav from "../../components/nav/nav.component";
 import HomeNav from "../../components/nav/homeNav.component";
 
 const Projects = () => {
@@ -19,7 +18,6 @@ const Projects = () => {
                     return response.json()
                 })
                 .then(result => {
-                    console.log(result)
                     setRepos(result);
                 })
                 .catch(_ => {
@@ -40,20 +38,21 @@ const Projects = () => {
                 :
                 <>
                     <HomeNav />
+
                     <section className="projects">
                         <h1 className="icon-btn text-gradient"><BsGithub />  &nbsp; Github Projects</h1>
                         <div className="cards">
-                            {getRepos.map(({ name, description, html_url, homepage, created_at, topics }, index) => {
+                            {getRepos.map(({ name, description, html_url, homepage, created_at , id }) => {
                                 return (
-                                    <div key={index} className="card">
+                                    <div key={id} className="card">
                                         <div>
                                             <h2>{name}</h2>
                                         </div>
                                         <div>
-                                            Description: {(description)?description:<i>Not Available</i>}
+                                            Description: {(description) ? description : <i>Not Available</i>}
                                         </div>
                                         <div className="cta">
-                                            <a href={homepage} className={homepage?"btn":"btn btn-disabled"} target="blank">Demo</a>
+                                            <a href={homepage} className={homepage ? "btn" : "btn btn-disabled"} target="blank">Demo</a>
                                             <a href={html_url} className="btn btn-primary" target="blank">Visit Repo</a>
 
 

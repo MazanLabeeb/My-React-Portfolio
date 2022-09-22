@@ -57,7 +57,7 @@ const Portfolio = () => {
                 }
             </div>
             <div className="load-more">
-                <Link className="btn btn-primary icon-btn" to={"/projects"}><GrProjects />More Projects ...</Link>
+                <Link className="btn btn-primary icon-btn" to={"/projects"}><GrProjects />More Projects</Link>
             </div>
         </section>
     )

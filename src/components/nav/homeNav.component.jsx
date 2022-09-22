@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const HomeNav = () => {
     return (
         <nav id="floatingNav">
-            <Link to="/" className="" title="Home"><AiOutlineHome /></Link>
+            <Link to="/" className="" title="Home" ><AiOutlineHome /></Link>
         </nav>
     )
 }

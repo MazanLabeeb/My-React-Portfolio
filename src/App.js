@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, ScrollRestoration } from "react-router-dom";
 import Index from "./pages/index/index.page";
 import PageNotFound from "./pages/PageNotFound/PageNotFound.page";
 import Projects from "./pages/projects/projects.page";

@@ -1,12 +1,13 @@
 import "./about.styles.scss";
 import ABOUT_ME_IMG from "../../assets/1by1dp.png";
-import {FaAward } from "react-icons/fa";
-import {FiUsers } from "react-icons/fi";
-import {AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { FaAward } from "react-icons/fa";
+import { FiUsers } from "react-icons/fi";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 
 const About = () => {
+
     return (
-        <section id="about">
+        <section id="about" >
             <h5>Get To Know</h5>
             <h2>About Me</h2>
 
