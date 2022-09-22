@@ -2,9 +2,9 @@ import "./portfolio.styles.scss";
 import PORTFOLIO1 from "../../assets/portfolio1.png";
 import PORTFOLIO2 from "../../assets/portfolio2.png";
 import PORTFOLIO3 from "../../assets/portfolio3.png";
-import PORTFOLIO4 from "../../assets/portfolio4.jpg";
-import PORTFOLIO5 from "../../assets/portfolio5.png";
-import PORTFOLIO6 from "../../assets/portfolio6.jpg";
+import { Link } from "react-router-dom";
+import { GrProjects } from "react-icons/gr";
+
 
 
 const data = [
@@ -55,6 +55,9 @@ const Portfolio = () => {
                         );
                     })
                 }
+            </div>
+            <div className="load-more">
+                <Link className="btn btn-primary icon-btn" to={"/projects"}><GrProjects />More Projects ...</Link>
             </div>
         </section>
     )

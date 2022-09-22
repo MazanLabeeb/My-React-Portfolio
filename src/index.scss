@@ -15,6 +15,7 @@
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 
 /* Track */
@@ -160,3 +161,9 @@ img{
   }
 }
 
+.icon-btn{
+  gap: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

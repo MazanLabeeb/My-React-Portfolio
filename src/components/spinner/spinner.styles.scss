@@ -1,0 +1,21 @@
+@import "../../globals";
+
+.spinner {
+    font-size: 3rem;
+    color: $primary;
+
+    animation-name: spinner;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
