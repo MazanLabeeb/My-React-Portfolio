@@ -1,0 +1,120 @@
+@import "../../globals";
+
+.nav2 {
+    z-index: 2;
+    position: fixed;
+    // top: 2rem;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    ;
+    backdrop-filter: blur(5px);
+    display: flex;
+    gap: 0.5rem;
+    border-radius: 10px;
+
+    * {
+        user-select: none !important;
+        -webkit-user-drag: none;
+    }
+
+    ul {
+        display: flex;
+        li {
+            cursor: default;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 50px;
+            height: 25px;
+
+            &:hover {
+                opacity: 1;
+                color: red;
+            }
+
+            .icon-wraper {
+                margin: 0 auto;
+                transition: transform 0.3s linear;
+                cursor: pointer;
+                padding: 0.6rem;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: translateY(-9px);
+
+                &:hover {
+                    background: rgba(0, 0, 0, 0.3);
+                }
+
+                .icon {
+                    font-size: 1.5rem;
+                    z-index: 1;
+
+
+                }
+            }
+
+            .title {
+                font-size: 0.8rem !important;
+                color: $primary;
+                display: none;
+                cursor: default;
+            }
+        }
+
+
+        li.active .icon {
+            cursor: default !important;
+        }
+
+        li.active .icon-wraper {
+            border-radius: 50%;
+            padding: 0.5rem;
+            width: 40px;
+            height: 40px;
+            color: $bg;
+            transform: translateY(-34px);
+            background-color: transparent;
+
+        }
+
+
+        li.active .title {
+            display: inline;
+            transform: translateY(-24px);
+
+        }
+
+        .highlighter {
+            width: 40px;
+            border-radius: 50%;
+            height: 40px;
+            background-color: $primary;
+            position: absolute;
+            top: -18px;
+            left: 21px;
+            transition: transform 0.3s linear;
+            z-index: -1;
+        }
+
+        li.active:nth-child(2)~.highlighter {
+            transform: translateX(50px);
+        }
+
+        li.active:nth-child(3)~.highlighter {
+            transform: translateX(100px);
+        }
+
+        li.active:nth-child(4)~.highlighter {
+            transform: translateX(150px);
+        }
+
+        li.active:nth-child(5)~.highlighter {
+            transform: translateX(200px);
+        }
+    }
+}
