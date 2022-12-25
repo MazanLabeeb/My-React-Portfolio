@@ -49,7 +49,6 @@ const Nav2 = () => {
                 </a>
                 <span className="title">Contact</span>
             </li>
-
             <div className="highlighter"></div>
         </ul>
     </nav>
