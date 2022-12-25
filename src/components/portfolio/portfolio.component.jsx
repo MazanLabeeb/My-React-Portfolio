@@ -1,5 +1,5 @@
 import "./portfolio.styles.scss";
-import PORTFOLIO1 from "../../assets/portfolio1.png";
+import PORTFOLIO1 from "../../assets/portfolio1.jpg";
 import PORTFOLIO2 from "../../assets/portfolio2.png";
 import PORTFOLIO3 from "../../assets/portfolio3.png";
 import { Link } from "react-router-dom";
@@ -10,25 +10,25 @@ import { GrProjects } from "react-icons/gr";
 const data = [
     {
         id: 1,
+        image: PORTFOLIO3,
+        title: "Quick Round - Schedule your meetings.",
+        github: "https://github.com/MazanLabeeb/quick-round",
+        demo: "https://quickround.tech"
+    },
+    {
+        id: 2,
         image: PORTFOLIO1,
         title: 'Wedding Plan Management System ',
         github: "https://github.com/MazanLabeeb/WPMS",
         demo: "https://weddingplanmanagementsystem.herokuapp.com/"
     },
     {
-        id: 2,
-        image: PORTFOLIO2,
-        title: "A basic nodejs based news website (dawn) scraper.",
-        github: "https://github.com/MazanLabeeb/newspk",
-        demo: "https://newspk.herokuapp.com"
-    },
-    {
         id: 3,
-        image: PORTFOLIO3,
-        title: "Blog made using Expressjs, Mongodb and Bootstrap.",
-        github: "https://github.com/MazanLabeeb/Express-Blog",
-        demo: "https://mazansblog.herokuapp.com/blog?category=20"
-    },
+        image: PORTFOLIO2,
+        title: "Visa Site - World Wide Immigration",
+        github: "https://github.com/MazanLabeeb/visa",
+        demo: "https://visa-demo.herokuapp.com/"
+    }
 ];
 
 
