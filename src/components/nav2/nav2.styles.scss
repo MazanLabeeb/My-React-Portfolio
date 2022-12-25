@@ -11,7 +11,6 @@
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     display: flex;
-    gap: 0.5rem;
     border-radius: 3rem;
 
     * {
@@ -21,6 +20,8 @@
 
     ul {
         display: flex;
+        gap: 0.5rem;
+
         li {
             cursor: default;
             display: flex;
@@ -63,7 +64,9 @@
                 color: $primary;
                 display: none;
                 cursor: default;
+
             }
+
         }
 
 
@@ -91,7 +94,7 @@
 
         .highlighter {
             width: 50px;
-            height: 50px; 
+            height: 50px;
             border-radius: 50%;
             background-color: $primary;
             position: absolute;
@@ -99,22 +102,25 @@
             left: 31px;
             transition: transform 0.3s linear;
             z-index: -1;
+
+          
         }
 
+
         li.active:nth-child(2)~.highlighter {
-            transform: translateX(51px);
+            transform: translateX(59px);
         }
 
         li.active:nth-child(3)~.highlighter {
-            transform: translateX(101px);
+            transform: translateX(117px);
         }
 
         li.active:nth-child(4)~.highlighter {
-            transform: translateX(151px);
+            transform: translateX(175px);
         }
 
         li.active:nth-child(5)~.highlighter {
-            transform: translateX(201px);
+            transform: translateX(232px);
         }
     }
 }
