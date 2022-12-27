@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { BsGithub } from "react-icons/bs";
 import moment from "moment";
 import Footer from "../../components/footer/footer.component";
-import HomeNav from "../../components/nav/homeNav.component";
+import HomeNav2 from "../../components/nav2/homeNav2.component";
 
 const Projects = () => {
     const [getRepos, setRepos] = useState(null);
@@ -37,7 +37,7 @@ const Projects = () => {
                 </div>
                 :
                 <>
-                    <HomeNav />
+                    <HomeNav2 />
 
                     <section className="projects">
                         <h1 className="icon-btn text-gradient"><BsGithub />  &nbsp; Github Projects</h1>

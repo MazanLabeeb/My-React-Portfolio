@@ -43,10 +43,6 @@
                 transition: $transition;
                 cursor: default;
 
-                &:hover{
-                    background: transparent;
-                    border-color: $primary-variant;
-                }
 
                 .about-card-icon{
                     color: $primary;

@@ -11,10 +11,6 @@
         border-radius: 2rem;
         border: 1px solid transparent;
         transition: $transition;
-        &:hover{
-            border-color: $primary-variant;
-            background: transparent;
-        }
 
         .portfolio-item-image{
             border-radius: 1.5rem;

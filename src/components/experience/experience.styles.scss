@@ -12,11 +12,7 @@
         border: 1px solid transparent;
         transition: $transition;
 
-        &:hover{
-            background: transparent;
-            border-color: $primary-variant;
-            cursor: default;
-        }
+       
 
         &>h3{
             color: $primary;

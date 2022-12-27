@@ -12,11 +12,6 @@
         height: fit-content;
         transition: $transition;
 
-        &:hover{
-            background-color: transparent;
-            border-color: $primary-variant;
-            cursor: default;
-        }
 
         .service-head{
             background: $primary;
