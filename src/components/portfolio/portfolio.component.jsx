@@ -16,9 +16,9 @@ const data = [
     {
         id: 2,
         image: PORTFOLIO1,
-        title: 'Wedding Plan Management System ',
-        github: "https://github.com/MazanLabeeb/WPMS",
-        demo: "https://weddingplanmanagementsystem.herokuapp.com/"
+        title: 'Transport Company Website | Balayara ',
+        github: "https://github.com/MazanLabeeb/websitee",
+        demo: "https://balayara.ae/"
     },
     {
         id: 3,
@@ -47,7 +47,7 @@ const Portfolio = () => {
                                 <h3>{(title)}</h3>
                                 <div className="portfolio-item-cta">
                                     <a href={github} className="btn" target="_blank">Github</a>
-                                    <a href={demo} className="btn btn-primary" target="_blank">Live Demo</a>
+                                    <a href={demo} className="btn btn-primary" target="_blank">Live Link</a>
                                 </div>
                             </article>
                         );
