@@ -14,7 +14,7 @@ const Services = () => {
                 <motion.article
                     initial={{
                         opacity: 0,
-                        transform: 'translateY(100px)'
+                        transform: 'translateY(50px)'
                     }}
                     whileInView={{
                         opacity: 1,
@@ -22,7 +22,7 @@ const Services = () => {
 
                     }}
                     viewport={{ once: viewPortOnce }}
-                    transition={{ delay: 0.3 }}
+                    transition={{ delay: 0.4 }}
                     className="service">
                     <div className="service-head">
                         <h3>Frontend Design</h3>
@@ -55,7 +55,7 @@ const Services = () => {
                 <motion.article
                     initial={{
                         opacity: 0,
-                        transform: 'translateY(100px)'
+                        transform: 'translateY(50px)'
                     }}
                     whileInView={{
                         opacity: 1,
@@ -63,7 +63,7 @@ const Services = () => {
 
                     }}
                     viewport={{ once: viewPortOnce }}
-                    transition={{ delay: 0.7 }}
+                    transition={{ delay: 0.9 }}
                     className="service">
                     <div className="service-head">
                         <h3>Web Developement</h3>
@@ -106,14 +106,14 @@ const Services = () => {
                 <motion.article
                     initial={{
                         opacity: 0,
-                        transform: 'translateY(100px)'
+                        transform: 'translateY(50px)'
                     }}
                     whileInView={{
                         opacity: 1,
                         transform: 'translateY(0px)'
                     }}
                     viewport={{ once: viewPortOnce }}
-                    transition={{ delay: 1.1 }}
+                    transition={{ delay: 1.5 }}
                     className="service">
                     <div className="service-head">
                         <h3>Web Scraping and Automation</h3>

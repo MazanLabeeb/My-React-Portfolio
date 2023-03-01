@@ -24,14 +24,14 @@ const data = [
 
     },
     {
-        avatar: AVATAR3,
-        name: "Kuljit Kaur",
+        avatar: AVATAR1,
+        name: "Kuldeep Singh",
         review: "Very prompt replies and constantly updated me throughout the process. Was clear on what he could do and couldn't do."
 
     },
 
     {
-        avatar: AVATAR2,
+        avatar: AVATAR1,
         name: "trebuuu",
         review: "Great partner for any software project! Mazen has the skills and temperament you wish for in a developer. thanks again!"
     }

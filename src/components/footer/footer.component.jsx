@@ -1,9 +1,7 @@
 import "./footer.styles.scss";
-import { FiGithub, FiInstagram } from "react-icons/fi";
-import { FaFacebookF } from "react-icons/fa";
-import { ImLinkedin2 } from "react-icons/im";
-import { SiUpwork } from "react-icons/si";
 import { useLocation } from "react-router-dom";
+import { footerSocialTiles, viewPortOnce } from "../../config";
+import { motion } from "framer-motion";
 
 const Footer = () => {
     const location = useLocation();
@@ -29,11 +27,27 @@ const Footer = () => {
 
 
             <div className="footer-socials ">
-                <a href="https://www.upwork.com/freelancers/~01622576d387633e89" target="blank"><SiUpwork /></a>
-                <a href="https://www.linkedin.com/in/mazanlabeeb/" target="blank"><ImLinkedin2 /></a>
-                <a href="https://github.com/mazanlabeeb" target="blank"><FiGithub /></a>
-                <a href="https://facebook.com/mazanlabeeb" target="blank"><FaFacebookF /></a>
-                <a href="https://instagram.com/mazanlabeeb" target="blank"><FiInstagram /></a>
+                {
+                    footerSocialTiles.map((item, index) => {
+                        const { id, link, icon } = item;
+                        return <motion.a
+                            initial={{
+                                opacity: 0,
+                                transform: 'translateX(50px)'
+                            }}
+                            whileInView={{
+                                opacity: 1,
+                                transform: 'translateX(0px)'
+                            }}
+                            viewport={{ once: viewPortOnce }}
+                            transition={{ delay: (index * 0.2) + (index / 5) }}
+                            key={id}
+                            href={link}
+                            target="blank">
+                            {icon}
+                        </motion.a>
+                    })
+                }
             </div>
 
             <div className="footer-copyright">

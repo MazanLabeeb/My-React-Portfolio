@@ -25,14 +25,14 @@ const Contact = () => {
                     <motion.a
                         initial={{
                             opacity: 0,
-                            transform: 'translateX(100px)'
+                            transform: 'translateX(50px)'
                         }}
                         whileInView={{
                             opacity: 1,
                             transform: 'translateX(0px)'
                         }}
                         viewport={{ once: viewPortOnce }}
-                        transition={{ delay: 0.3 }}
+                        transition={{ delay: 0.4 }}
                         href="mailto:mazanlabeeb@gmail.com" target="_blank">
                         <article className="contact-option">
                             <MdOutlineEmail className="contact-icon " />
@@ -44,14 +44,14 @@ const Contact = () => {
                     <motion.a
                         initial={{
                             opacity: 0,
-                            transform: 'translateX(100px)'
+                            transform: 'translateX(50px)'
                         }}
                         whileInView={{
                             opacity: 1,
                             transform: 'translateX(0px)'
                         }}
                         viewport={{ once: viewPortOnce }}
-                        transition={{ delay: 0.7 }}
+                        transition={{ delay: 1.0 }}
                         href="https://m.me/mazanlabeeb" target="_blank">
                         <article className="contact-option">
                             <RiMessengerLine className="contact-icon" />
@@ -65,14 +65,14 @@ const Contact = () => {
                     <motion.a
                         initial={{
                             opacity: 0,
-                            transform: 'translateX(100px)'
+                            transform: 'translateX(50px)'
                         }}
                         whileInView={{
                             opacity: 1,
                             transform: 'translateX(0px)'
                         }}
                         viewport={{ once: viewPortOnce }}
-                        transition={{ delay: 1.1 }}
+                        transition={{ delay: 1.5 }}
                         href="https://api.whatsapp.com/send?phone=923061695230" target="_blank">
 
                         <article className="contact-option">

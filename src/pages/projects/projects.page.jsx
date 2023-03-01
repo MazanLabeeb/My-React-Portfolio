@@ -6,6 +6,9 @@ import { BsGithub } from "react-icons/bs";
 import moment from "moment";
 import Footer from "../../components/footer/footer.component";
 import HomeNav2 from "../../components/nav2/homeNav2.component";
+import { motion } from "framer-motion";
+import { viewPortOnce } from "../../config";
+
 
 const Projects = () => {
     const [getRepos, setRepos] = useState(null);
@@ -42,9 +45,23 @@ const Projects = () => {
                     <section className="projects">
                         <h1 className="icon-btn text-gradient"><BsGithub />  &nbsp; Github Projects</h1>
                         <div className="cards">
-                            {getRepos.map(({ name, description, html_url, homepage, created_at, id }) => {
+                            {getRepos.map((data, index) => {
+                                const { name, description, html_url, homepage, created_at, id } = data;
                                 return (
-                                    <div key={id} className="card">
+                                    <motion.div
+                                        key={id}
+                                        className="card"
+                                        initial={{
+                                            opacity: 0,
+                                            transform: 'translateY(50px)'
+                                        }}
+                                        whileInView={{
+                                            opacity: 1,
+                                            transform: 'translateY(0px)'
+                                        }}
+                                        viewport={{ once: viewPortOnce }}
+                                        transition={{ delay:  0.5 }}
+                                    >
                                         <div>
                                             <h2>{name}</h2>
                                         </div>
@@ -58,7 +75,7 @@ const Projects = () => {
                                             </div>
                                             <span>Posted: {moment(created_at).fromNow()}</span>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 )
                             })}
                         </div>

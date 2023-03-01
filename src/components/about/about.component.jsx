@@ -29,7 +29,7 @@ const About = () => {
                             className="about-card"
                             initial={{
                                 opacity: 0,
-                                transform: 'translateX(100px)'
+                                transform: 'translateX(50px)'
                             }}
                             whileInView={{
                                 opacity: 1,
@@ -48,7 +48,7 @@ const About = () => {
                             className="about-card"
                             initial={{
                                 opacity: 0,
-                                transform: 'translateX(100px)'
+                                transform: 'translateX(50px)'
                             }}
                             whileInView={{
                                 opacity: 1,
@@ -66,7 +66,7 @@ const About = () => {
                         <motion.article
                             initial={{
                                 opacity: 0,
-                                transform: 'translateX(100px)'
+                                transform: 'translateX(50px)'
                             }}
                             whileInView={{
                                 opacity: 1,

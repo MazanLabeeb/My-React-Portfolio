@@ -13,7 +13,7 @@ const Experience = () => {
                 <motion.div
                     initial={{
                         opacity: 0,
-                        transform: 'translateY(100px)'
+                        transform: 'translateY(50px)'
                     }}
                     whileInView={{
                         opacity: 1,
@@ -83,7 +83,7 @@ const Experience = () => {
                 <motion.div
                     initial={{
                         opacity: 0,
-                        transform: 'translateY(100px)'
+                        transform: 'translateY(50px)'
                     }}
                     whileInView={{
                         opacity: 1,
