@@ -13,6 +13,8 @@
     display: flex;
     border-radius: 3rem;
     transition: all 300ms ease;
+    border: 1px dotted $primary;
+    // border-style: groove;
     * {
         user-select: none !important;
         -webkit-user-drag: none;
