@@ -4,6 +4,8 @@ import PORTFOLIO2 from "../../assets/portfolio2.png";
 import PORTFOLIO3 from "../../assets/portfolio3.png";
 import { Link } from "react-router-dom";
 import { GrProjects } from "react-icons/gr";
+import { motion } from 'framer-motion';
+import { viewPortOnce } from "../../config";
 
 const data = [
     {
@@ -38,9 +40,23 @@ const Portfolio = () => {
 
             <div className="container portfolio-container">
                 {
-                    data.map(({ id, image, title, github, demo }) => {
+                    data.map((item, index) => {
+                        const { id, image, title, github, demo } = item;
                         return (
-                            <article className="portfolio-item" key={id}>
+                            <motion.article
+
+                                initial={{
+                                    opacity: 0,
+                                    transform: 'translateX(100px)'
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    transform: 'translateX(0px)'
+                                }}
+                                viewport={{ once: viewPortOnce }}
+                                transition={{ delay: index * 0.5 }}
+
+                                className="portfolio-item" key={id}>
                                 <div className="portfolio-item-image">
                                     <img src={image} alt="Portfolio" loading="lazy" />
                                 </div>
@@ -49,7 +65,7 @@ const Portfolio = () => {
                                     <a href={github} className="btn" target="_blank">Github</a>
                                     <a href={demo} className="btn btn-primary" target="_blank">Live Link</a>
                                 </div>
-                            </article>
+                            </motion.article>
                         );
                     })
                 }

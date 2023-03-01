@@ -6,12 +6,16 @@
     grid-template-columns: 30% 58%;
     gap: 12%;
 
+
     .contact-options {
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
 
+
+
         .contact-option {
+
             background: $bg-variant;
             padding: 1.2rem;
             border-radius: 1.2rem;
@@ -24,7 +28,8 @@
                 border-color: $primary-variant;
             }
 
-            h4,h5{
+            h4,
+            h5 {
                 color: white;
             }
 
@@ -73,7 +78,14 @@
 
 // media query - medium devices
 @media screen and (max-width: 1024px) {
+
+
+
     .contact-container {
+        * {
+            overflow: hidden;
+        }
+
         grid-template-columns: 1fr;
         gap: 2rem;
     }
@@ -82,7 +94,14 @@
 
 // media query - small devices
 @media screen and (max-width: 600px) {
+
+
+
     .contact-container {
+        * {
+            overflow: hidden;
+        }
+
         width: $container-width-sm;
         grid-template-columns: 1fr;
         gap: 1rem;

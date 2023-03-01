@@ -1,11 +1,15 @@
 @import "../../globals";
 
-.services-container{
+.services-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 
-    .service{
+    * {
+        overflow: hidden;
+    }
+
+    .service {
         background: $bg-variant;
         border-radius: 0 0 2rem 2rem;
         border: 1px solid $primary;
@@ -13,35 +17,35 @@
         transition: $transition;
 
 
-        .service-head{
+        .service-head {
             background: $primary;
             padding: 2rem;
             border-radius: 0 0 2rem 2rem;
-            box-shadow: 0 2rem 1rem rgba(0,0,0,0.1);
+            box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
 
-            h3{
+            h3 {
                 color: $bg;
                 font-size: 1rem;
                 text-align: center;
             }
         }
 
-        .service-list{
+        .service-list {
             padding: 2rem;
 
-            li{
+            li {
 
                 display: grid;
                 grid-template-columns: 15% 85%;
                 margin-bottom: 0.8rem;
                 align-items: center;
 
-                p{
+                p {
                     font-size: 0.9rem;
                 }
             }
 
-            .service-list-icon{
+            .service-list-icon {
                 color: $primary;
                 font-size: 1.2rem;
             }
@@ -52,18 +56,19 @@
 
 // media query - medium devices
 @media screen and (max-width: 1024px) {
-    .services-container{
+    .services-container {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
-    .services-container .service{
+
+    .services-container .service {
         height: auto;
     }
 }
 
 // media query - small devices
 @media screen and (max-width: 600px) {
-    .services-container{
+    .services-container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }

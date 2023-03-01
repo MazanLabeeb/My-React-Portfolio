@@ -1,6 +1,8 @@
 import "./services.styles.scss";
-import {AiOutlineCheck} from 'react-icons/ai';
-import {BiDotsHorizontal} from 'react-icons/bi';
+import { AiOutlineCheck } from 'react-icons/ai';
+import { BiDotsHorizontal } from 'react-icons/bi';
+import { motion } from 'framer-motion';
+import { viewPortOnce } from "../../config";
 
 const Services = () => {
     return (
@@ -9,7 +11,19 @@ const Services = () => {
             <h2>Services</h2>
 
             <div className="container services-container">
-            <article className="service">
+                <motion.article
+                    initial={{
+                        opacity: 0,
+                        transform: 'translateY(100px)'
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        transform: 'translateY(0px)'
+
+                    }}
+                    viewport={{ once: viewPortOnce }}
+                    transition={{ delay: 0.3 }}
+                    className="service">
                     <div className="service-head">
                         <h3>Frontend Design</h3>
                     </div>
@@ -36,9 +50,21 @@ const Services = () => {
                             <p>Single page website (SPA) using React.</p>
                         </li>
                     </ul>
-                </article>
+                </motion.article>
 
-                <article className="service">
+                <motion.article
+                    initial={{
+                        opacity: 0,
+                        transform: 'translateY(100px)'
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        transform: 'translateY(0px)'
+
+                    }}
+                    viewport={{ once: viewPortOnce }}
+                    transition={{ delay: 0.7 }}
+                    className="service">
                     <div className="service-head">
                         <h3>Web Developement</h3>
                     </div>
@@ -68,16 +94,27 @@ const Services = () => {
                             <AiOutlineCheck className="service-list-icon" />
                             <p>A Distinctive and Professional-Appearing Design</p>
                         </li>
-                        
+
 
                         <li>
                             <BiDotsHorizontal className="service-list-icon" />
                             <p>and much more</p>
                         </li>
                     </ul>
-                </article>
+                </motion.article>
 
-                <article className="service">
+                <motion.article
+                    initial={{
+                        opacity: 0,
+                        transform: 'translateY(100px)'
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        transform: 'translateY(0px)'
+                    }}
+                    viewport={{ once: viewPortOnce }}
+                    transition={{ delay: 1.1 }}
+                    className="service">
                     <div className="service-head">
                         <h3>Web Scraping and Automation</h3>
                     </div>
@@ -104,7 +141,7 @@ const Services = () => {
                             <p>Get your data in any format including CSV, JSON, Excel, and any Database.</p>
                         </li>
                     </ul>
-                </article>
+                </motion.article>
             </div>
         </section>
     )

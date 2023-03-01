@@ -1,11 +1,12 @@
 @import "../../globals";
 
-.about-container{
+.about-container {
+
     display: grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
 
-    .about-me{
+    .about-me {
         width: 100%;
         aspect-ratio: 1/1;
         border-radius: 2rem;
@@ -13,28 +14,33 @@
         display: grid;
         place-items: center;
 
-        .about-me-image{
+        .about-me-image {
             width: 100%;
             border-radius: 2rem;
             overflow: hidden;
             transform: rotate(10deg);
             transition: $transition;
-            &:hover{
-                transform: rotate(0deg);
+
+            &:hover {
+                transform: rotate(0deg) !important;
             }
         }
 
 
     }
-    
-    .about-content{
-        .about-cards{
-            
+
+    .about-content {
+        * {
+            overflow: hidden;
+        }
+
+        .about-cards {
+
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 1.5rem;
 
-            .about-card{      
+            .about-card {
                 background: $bg-variant;
                 border: 1px solid transparent;
                 border-radius: 1rem;
@@ -44,25 +50,25 @@
                 cursor: default;
 
 
-                .about-card-icon{
+                .about-card-icon {
                     color: $primary;
                     font-size: 2rem;
                     margin-bottom: 1rem;
                 }
 
-                h5{
+                h5 {
                     font-size: 0.95rem;
                     color: $white;
                 }
 
-                small{
+                small {
                     font-size: 0.7rem;
                     color: $light
                 }
             }
         }
 
-        p{
+        p {
             margin: 2rem 0 2.6rem;
             color: $light;
         }
@@ -72,38 +78,40 @@
 
 // media query - medium devices
 @media screen and (max-width: 1024px) {
-    .about-container{
+    .about-container {
         grid-template-columns: 1fr;
-        gap:0;
+        gap: 0;
     }
 
-    .about-container .about-me{
+    .about-container .about-me {
         width: 50%;
         margin: 2rem auto 4rem;
     }
 
-    .about-container .about-content p{
+    .about-container .about-content p {
         margin: 1rem 0 1.5rem;
     }
-    
+
 }
 
 
 // media query - small devices
 @media screen and (max-width: 600px) {
-    .about-container .about-me{
+    .about-container .about-me {
         width: 65%;
         margin: 0 auto 3rem;
     }
 
-    .about-container .about-content .about-cards{
+    .about-container .about-content .about-cards {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
-    .about-content{
+
+    .about-content {
         text-align: center;
     }
-    .about-container .about-content p{
+
+    .about-container .about-content p {
         margin: 1.5rem 0;
     }
 }

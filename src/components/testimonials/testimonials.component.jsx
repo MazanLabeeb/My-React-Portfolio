@@ -1,5 +1,5 @@
 import "./testimonials.styles.scss";
-import AVATAR1 from "../../assets/avatar1.jpg";
+import AVATAR1 from "../../assets/avatar1.png";
 import AVATAR2 from "../../assets/avatar2.jpg";
 import AVATAR3 from "../../assets/avatar3.jpg";
 
@@ -19,13 +19,15 @@ SwiperCore.use([Autoplay]);
 const data = [
     {
         avatar: AVATAR1,
-        name: "ramizberisha",
-        review: "Very prompt replies and constantly updated me throughout the process. Was clear on what he could do and couldn't do."
+        name: "Hassan Raza K.",
+        review: "It was amazing to work with mazan, his communication was excellent & did a great job on the project, I will definitely hire him again"
+
     },
     {
         avatar: AVATAR3,
         name: "Kuljit Kaur",
-        review: "Everything looks perfect so far, thank you very much !"
+        review: "Very prompt replies and constantly updated me throughout the process. Was clear on what he could do and couldn't do."
+
     },
 
     {
@@ -47,7 +49,7 @@ const Testimonials = () => {
                 spaceBetween={40}
                 slidesPerView={1}
                 navigation
-                autoplay = {{delay:4000}}
+                autoplay={{ delay: 3000 }}
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
             >
