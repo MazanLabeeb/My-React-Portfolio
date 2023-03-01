@@ -7,7 +7,7 @@ import { BsWhatsapp } from "react-icons/bs";
 const Contact = () => {
 
     const hideNavBar = () => {
-        document.getElementById("floatingNav").style.bottom = "-5rem";
+        document.getElementById("floatingNav").style.bottom = "-8rem";
     }
     const showNavBar = () => {
         document.getElementById("floatingNav").style.bottom = "2rem";
@@ -19,28 +19,34 @@ const Contact = () => {
 
             <div className="container contact-container">
                 <div className="contact-options">
-                    <article className="contact-option">
-                        <MdOutlineEmail className="contact-icon " />
-                        <h4>Email</h4>
-                        <h5>mazanlabeeb@gmail.com</h5>
-                        <a href="mailto:mazanlabeeb@gmail.com" target="_blank">Send a Message</a>
-                    </article>
 
-                    <article className="contact-option">
+                    <a href="mailto:mazanlabeeb@gmail.com" target="_blank">
+                        <article className="contact-option">
+                            <MdOutlineEmail className="contact-icon " />
+                            <h4>Email</h4>
+                            <h5>mazanlabeeb@gmail.com</h5>
+                            <p> Send a Message</p>
+                        </article>
+                    </a>
+                    <a href="https://m.me/mazanlabeeb" target="_blank">
+                        <article className="contact-option">
+                            <RiMessengerLine className="contact-icon" />
+                            <h4>Messenger</h4>
+                            <h5>mazanlabeeb</h5>
+                            <p>
+                                Send a Message
+                            </p>
+                        </article>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=923061695230" target="_blank">
 
-                        <RiMessengerLine className="contact-icon" />
-                        <h4>Messenger</h4>
-                        <h5>mazanlabeeb</h5>
-                        <a href="https://m.me/mazanlabeeb" target="_blank">Send a Message</a>
-                    </article>
-
-                    <article className="contact-option">
-
-                        <BsWhatsapp className="contact-icon" />
-                        <h4>Whatsapp</h4>
-                        <h5>+923061695230</h5>
-                        <a href="https://api.whatsapp.com/send?phone=923061695230" target="_blank">Send a Message</a>
-                    </article>
+                        <article className="contact-option">
+                            <BsWhatsapp className="contact-icon" />
+                            <h4>Whatsapp</h4>
+                            <h5>+923061695230</h5>
+                            <p> Send a Message</p>
+                        </article>
+                    </a>
                 </div>
                 <form action="https://formsubmit.co/1a6397aef63bcdc9afe758f5d96e1b6a" method="POST" autoComplete="off">
                     <input type="text" name="name" onFocus={hideNavBar} onBlur={showNavBar} id="name" placeholder="Your Full Name" required />

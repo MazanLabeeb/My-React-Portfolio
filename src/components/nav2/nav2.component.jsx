@@ -10,7 +10,7 @@ const Nav2 = () => {
     const [activeNav, setActiveNav] = useState("#");
 
 
-    return <nav className="nav2">
+    return <nav className="nav2" id="floatingNav">
         <ul>
             <li className={(activeNav === "#") ? "active" : ""} title="Home">
                 <a href="#" className="icon-wraper" onClick={() => setActiveNav("#")}>
