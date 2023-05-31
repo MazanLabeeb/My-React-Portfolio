@@ -8,12 +8,12 @@ import { SiUpwork } from "react-icons/si";
 const HeaderSocials = () => {
     return (
         <div className="header-socials">
-            <a href="https://www.linkedin.com/in/mazanlabeeb/" target="_blank"><BsLinkedin /></a>
             <a href="https://www.upwork.com/freelancers/~01622576d387633e89" target="blank"><SiUpwork /></a>
+            {/* <a href="https://www.linkedin.com/in/mazanlabeeb/" target="_blank"><BsLinkedin /></a>
             <a href="https://github.com/mazanlabeeb" target="_blank"><BsGithub /></a>
             <a href="https://instagram.com/mazanlabeeb" target="_blank"><BsInstagram /></a>
             <a href="https://facebook.com/mazanlabeeb" target="_blank"><BsFacebook /></a>
-            <a href="https://api.whatsapp.com/send?phone=923061695230" target="_blank"><BsWhatsapp /></a>
+            <a href="https://api.whatsapp.com/send?phone=923061695230" target="_blank"><BsWhatsapp /></a> */}
         </div>
     )
 }
